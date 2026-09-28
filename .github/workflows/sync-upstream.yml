@@ -25,6 +25,7 @@ jobs:
   sync:
     name: Sync from upstream
     runs-on: ubuntu-latest
+    if: ${{ github.event.repository.fork }}
 
     steps:
       - name: Checkout
